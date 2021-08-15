@@ -1,0 +1,251 @@
+/* trolley */
+.trolley{
+    .shop{
+        display: flex;
+
+        ul{
+            width: 15%;
+            text-align: center;
+
+            li{
+                height: 9em;
+                line-height: 9em;
+                input[type=checkbox]{
+                    margin: 0;
+                }
+                
+            }
+        }
+
+        .shoplist{
+            padding: 1em 0em 0em;
+            .list{
+                display: flex;
+                height: 8.5em;
+                margin-bottom: 1em;
+                padding: 1em;
+                box-shadow: 2px 3px 10px #ccc;
+                border-radius: 5px;
+                // justify-content: space-between;
+                // align-items: center;
+                .thumb{
+                    width: 30%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .content{
+                    padding-left: 10px;
+                    .title{
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+                    .style{
+                        font-size: 13px;
+                        padding-right: 90px;
+                    }
+                    .price{
+                        font-size: 14px;
+                        color: #ff3d5f;
+                        font-weight: bold;
+                    }
+                    .amount{
+                        text-align: right;
+                        margin-top: 5px;
+                        z-index: 10000;
+                        .circle{
+                            display: inline-block;
+                            text-align: center;
+                            width: 15px;
+                            height: 15px;
+                            font-size: 13px;
+                            line-height: 15px;
+                            border-radius: 100px;
+                            background: #d2d2d2;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom{
+        width: 100%;
+        padding: 1.5em 1em;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+       .add{
+           font-size: 15px;
+           line-height: 2em;
+           font-weight: bold;
+       }
+       .settlement{
+           width: 6em;
+           height: 2em;
+           background: #ff3d5f;
+           color: #fff;
+           font-size: 15px;
+           text-align: center;
+           line-height: 2em;
+           border-radius: 20px;
+       }
+    }
+
+    @media screen and(max-width:1024px) and(min-width:768px){
+        &{
+            .shop{
+                ul{
+                    width: 23%;
+                    padding: 1em 0em 0em;
+                    li{
+                        padding: 0em;
+                        height: 18em;
+                        line-height: 18em;
+                        input{
+                            display: inline-block;
+                            width: 3em;
+                            height: 3em;
+                        }
+                    }
+                }
+                .shoplist{
+                    width: 70%;
+                    .list{
+                        height: 17em;
+                        padding: 2em;
+
+                        .content{
+                            .title{
+                                font-size: 22px;
+                            }
+                            .style{
+                                font-size: 16px;
+                                padding-right: 10em;
+                            }
+                            .price{
+                                font-size: 20px;
+                            }
+
+                            .amount{
+                                margin-top: 2em;
+                                .circle{
+                                    width: 30px;
+                                    height: 30px;
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                }
+                                .number{
+                                    font-size: 20px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+            .bottom{
+                padding: 2.5em 3em;
+                .add{
+                    font-size: 20px;
+                    line-height: 2.5em;
+                }
+                .settlement{
+                    width: 10em;
+                    height: 3em;
+                    font-size: 20px;
+                    line-height: 3em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:834px) and(min-width:768px){
+        &{
+            .shop{
+                ul{
+                    li{
+                        height: 15em;
+                        line-height: 15em;
+                        input{
+                            width: 2em;
+                            height: 2em;
+                        }
+                    }
+                }
+                .shoplist{
+                    .list{
+                        height: 14em;
+                        padding: 2em;
+
+                        .content{
+                            .amount{
+                                .circle{
+                                    width: 30px;
+                                    height: 30px;
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                }
+                                .number{
+                                    font-size: 20px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+            .bottom{
+                padding: 2.5em 3em;
+                .add{
+                    font-size: 20px;
+                    line-height: 3em;
+                }
+                .settlement{
+                    width: 10em;
+                    height: 3em;
+                    font-size: 20px;
+                    line-height: 3em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:320px){
+        &{
+            .shop{
+                ul{
+                    li{
+                        height: 7em;
+                        line-height: 8em;
+                        // input{
+                        //     width: 2em;
+                        //     height: 2em;
+                        // }
+                    }
+                }
+                .shoplist{
+                    .list{
+                        height: 6em;
+                        padding: 0.5em;
+
+                        .content{
+                            .title{
+                                font-size: 13px;
+                            }
+                            .style{
+                                font-size: 10px;
+                                padding-right: 5em;
+                            }
+                            .amount{
+                                margin-top: 0em;
+                            }
+
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

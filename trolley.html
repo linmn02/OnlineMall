@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+
+    <!-- 重置样式 -->
+    <link rel="stylesheet/less" href="./assets/css/reset.less" />
+
+    <!-- 公共样式 -->
+    <link rel="stylesheet/less" href="./assets/css/common.less" />
+
+    <!-- 页面独立的 -->
+    <link rel="stylesheet/less" href="./assets/css/trolley.less" />
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-3 site glyphicon glyphicon-map-marker"><span class="title">广州市</span></div>
+                <div class="col-sm-7 col-xs-7 search">
+                    <input type="text" name="search" placeholder="广式月饼" />
+                </div>
+                <div class="col-sm-2 col-xs-2 notice glyphicon glyphicon-bell"></div>
+            </div>
+        </div>
+
+    </header>
+    
+    <div class="trolley">
+            <div class="container">
+                <div class="shop">
+                    <ul id="choice">
+                        <li style="list-style-type: none;"><input type="checkbox" name="choice"></li>
+                        <li style="list-style-type: none;"><input type="checkbox" name="choice"></li>
+                        <li style="list-style-type: none;"><input type="checkbox" name="choice"></li>
+                        <li style="list-style-type: none;"><input type="checkbox" name="choice"></li>
+                        <li style="list-style-type: none;"><input type="checkbox" name="choice"></li>
+                        <li style="list-style-type: none;"><input type="checkbox" name="choice"></li>
+                    </ul>
+    
+                    <div id="shoplist" class="shoplist">
+                        <div class="list">
+                            <div class="thumb">
+                                <img src="./assets/images/amount-img1.png" />
+                            </div>
+                            <div class="content">
+                                <h3 class="title">中秋节促销广式月饼</h3>
+                                <span class="style">礼盒装</span>
+                                <span class="price">&yen;14.00</span>
+                                <div class="amount">
+                                    <span class="circle jian">-</span>
+                                    <span class="number">5</span>
+                                    <span class="circle jia">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="thumb">
+                                <img src="./assets/images/amount-img2.png" />
+                            </div>
+                            <div class="content">
+                                <h3 class="title">中秋节促销广式月饼</h3>
+                                <span class="style">礼盒装</span>
+                                <span class="price">&yen;14.00</span>
+                                <div class="amount">
+                                    <span class="circle jian">-</span>
+                                    <span class="number">5</span>
+                                    <span class="circle jia">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="thumb">
+                                <img src="./assets/images/amount-img3.png" />
+                            </div>
+                            <div class="content">
+                                <h3 class="title">中秋节促销广式月饼</h3>
+                                <span class="style">礼盒装</span>
+                                <span class="price">&yen;14.00</span>
+                                <div class="amount">
+                                    <span class="circle jian">-</span>
+                                    <span class="number">5</span>
+                                    <span class="circle jia">+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <div class="thumb">
+                                <img src="./assets/images/amount-img4.png" />
+                            </div>
+                            <div class="content">
+                                <h3 class="title">中秋节促销广式月饼</h3>
+                                <span class="style">礼盒装</span>
+                                <span class="price">&yen;14.00</span>
+                                <div class="amount">
+                                    <span class="circle jian">-</span>
+                                    <span class="number">5</span>
+                                    <span class="circle jia">+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <div class="thumb">
+                                <img src="./assets/images/amount-img3.png" />
+                            </div>
+                            <div class="content">
+                                <h3 class="title">中秋节促销广式月饼</h3>
+                                <span class="style">礼盒装</span>
+                                <span class="price">&yen;14.00</span>
+                                <div class="amount">
+                                    <span class="circle jian">-</span>
+                                    <span class="number">5</span>
+                                    <span class="circle jia">+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <div class="thumb">
+                                <img src="./assets/images/amount-img2.png" />
+                            </div>
+                            <div class="content">
+                                <h3 class="title">中秋节促销广式月饼</h3>
+                                <span class="style">礼盒装</span>
+                                <span class="price">&yen;14.00</span>
+                                <div class="amount">
+                                    <span class="circle jian">-</span>
+                                    <span class="number">5</span>
+                                    <span class="circle jia">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="add">合计:<span class="total">1250.00</span></div>
+                    <div class="settlement">点击结算</div>
+                </div>
+            </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="list">
+            <a href="./index.html" class="item">
+                <i class="icon glyphicon glyphicon-home"></i>
+                <p class="title">首页</p>
+            </a>
+            <a href="./classify.html" class="item">
+                <i class="icon glyphicon glyphicon-th-large"></i>
+                <p class="title">分类</p>
+            </a>
+            <a href="./trolley.html" class="item">
+                <i class="icon glyphicon glyphicon-shopping-cart"></i>
+                <p class="title">购物车</p>
+            </a>
+            <a href="./mine.html" class="item">
+                <i class="icon glyphicon glyphicon-user"></i>
+                <p class="title">我的</p>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+<!-- 解析less的文件 -->
+<script src="./assets/js/less.min.js"></script>
+
+<!-- jquery  -->
+<script src="./assets/js/jquery.min.js"></script>
+
+<!-- bootstrap -->
+<script src="./assets/js/bootstrap.min.js"></script>
+
+<!-- wow.js -->
+<script src="./assets/js/wow.min.repeat.js"></script>
+
+<script>
+    new WOW().init();
+
+
+    // $(".list").click(function(){
+    //     var index = $(this).index()
+    //     $("input[name='choice']").eq(index).attr('checked', true)
+    // })
+    $(".list").click(function(){
+        var index = $(this).index()
+        $("input[name='choice']").eq(index).attr('checked', true)
+    })
+    
+
+
+    // 数字加减
+        //加
+        $(".jia").click(function(){
+            //使用index()方法绑定当前元素
+            var index = $(".jia").index(this);
+            //获得当前元素的值
+            var num = $(".number").eq(index).html();
+            //强制转化为数字
+            num = parseInt(num);
+            //加操作
+            num += 1;
+            //赋值
+            $(".number").eq(index).html(num);
+        });
+
+        //减
+        $(".jian").click(function(){
+            var index = $(".jian").index(this);
+            var num = $(".number").eq(index).html();
+            num = parseInt(num);
+            num -= 1;
+            if(num < 1){
+                num = 0;
+            }
+            $(".number").eq(index).html(num);
+        });
+
+
+</script>

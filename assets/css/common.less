@@ -1,0 +1,90 @@
+/* 头部 */
+.header{
+    margin: 1em 0em;
+    // padding: 0em .5em;
+    .site{
+        font-size: 1.3em;
+        padding-top: 3px;
+        text-align: center;
+
+        .title{
+            font-size: .7em;
+        }
+    }
+    .search{
+        input{
+            height:2em;
+            width: 100%;
+            border-radius: 50px;
+            border: 0;
+            box-shadow: 0px 0px 10px 2px #ccc;
+            padding: 0em 1em;
+        }
+    }
+    .notice{
+        text-align: center;
+        font-size: 1.3em;
+        padding-top: 3px;
+    }
+
+    @media screen and(max-width:1024px) and(min-width:768px) {
+            &{
+                .site{
+                    font-size: 2em;
+                }
+                .search{
+                    input{
+                        height: 3em;
+                    }
+                }
+                .notice{
+                    font-size: 2em;
+                }
+            }
+    }
+
+    @media screen and(max-width:320px) {
+        &{
+            .site{
+                font-size: 1em;
+                .title{
+                    font-size: .5em;
+                }
+            }
+        }
+    }
+
+}
+
+/* 底部 */
+.footer{
+    // height: 100%;
+    // // position: sticky;
+    // // position:fixed;
+    // // bottom:0;
+    // z-index:999;
+    background: #fff;
+    position: sticky;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index:10;
+
+    .list{
+        display: flex;
+        justify-content: space-around;
+        // height: 100%;
+        box-shadow: 5px -2px 15px #ccc;
+        padding-top: 10px;
+        a{
+            text-align: center;
+            color: #bfbfbf;
+            .icon{
+                font-size: 24px;
+            }
+            .title{
+                font-size: 18px;
+            }
+        }
+    }
+}
